@@ -9,7 +9,7 @@
 body {
     @include background;
     background: $primary-color;
-    color: #fff;
+    color: set-text-color($primary-color);
     height: 100%;
     margin: 0;
     font-family: 'Courier New', Courier, monospace;
@@ -53,7 +53,7 @@ header {
 
 main {
     padding: 4rem;
-    height: 100%;
+    min-height: calc(100vh - 40px);
 
     .icons {
         margin-top: 1rem;
@@ -66,6 +66,16 @@ main {
                 @include easeOut();
             }
         }
+
+        input {
+            width: 240px;
+            height: 30px;
+            border: 2px $primary-color solid;
+            border-radius: 5px;
+            font-size: 0.7em;
+        }
+
+        font-size: 24px;
     }
 
     &#home {
@@ -74,4 +84,81 @@ main {
             margin-top: 20vh;
         }
     }
+    &#coding {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+}
+
+.game {
+    width: 844px;
+    height: 489px;
+    background: url(../img/background2.jpg);
+    background-size: cover;
+    border: 4px $secondary-color solid;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: $secondary-color;
+
+    #score{
+        text-align: center;
+        font-size: 30px;
+        color: $secondary-color;
+    }
+
+    #number {
+        box-align: center; 
+        background-color: beige;
+        width: 250px;
+        text-align: center;
+        font-size: 32px;
+        border: 3px solid black;
+        border-radius: 10px;
+        color: #000;
+    }
+
+    #player {
+        background-color: beige;
+        border: 3px solid black;
+        border-radius: 10px;
+        text-align: center;
+        font-size: 32px;
+        outline: none;
+    }
+
+    #btn {
+        margin-top: 10px;
+        border-radius: 10px;
+        border: 1px solid black;
+        font-size: 28px;
+    }
+}
+
+.code {
+    margin: auto;
+    background-color: #000;
+    width: 800px;
+    color: $secondary-color;
+    border: 3px $secondary-color solid;
+    border-radius: 15px;
+
+    legend {
+        font-size: 2rem;
+    }
+
+    .review {
+        color: #73a9ce;
+    }
+}
+
+#main-footer {
+    text-align: center;
+    padding: 0.5rem;
+    background: darken($primary-color, 10);
+    color: set-text-color($primary-color);
+    height: 40px;
 }
