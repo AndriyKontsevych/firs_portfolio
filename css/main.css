@@ -96,7 +96,7 @@
     text-align: center; }
     main .lg-heading {
       line-height: 1;
-      margin-bottom: 1rem; }
+      margin-bottom: 0.5rem; }
   ul.menu-nav,
   div.menu-branding {
     float: none;
@@ -113,12 +113,87 @@
       font-size: 24px; }
   .menu-branding {
     height: 60vh;
-    transform: translate3d(100%, 0, 0); } }
+    transform: translate3d(100%, 0, 0); }
+  main#home h1,
+  main#contact h1,
+  main#about h1 {
+    font-size: 2.5rem;
+    margin-top: 3vh; }
+  main#coding {
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    main#coding .game {
+      width: 320px;
+      height: 280px;
+      background: url(../img/background2.jpg);
+      background-size: cover;
+      border: 2px #eece1a solid;
+      border-radius: 10px;
+      line-height: 1; }
+      main#coding .game #score {
+        text-align: center;
+        font-size: 18px;
+        color: #eece1a; }
+      main#coding .game #number {
+        box-align: center;
+        background-color: beige;
+        width: 100px;
+        text-align: center;
+        font-size: 18px;
+        border: 3px solid black;
+        border-radius: 10px;
+        color: #000; }
+      main#coding .game #player {
+        background-color: beige;
+        border: 3px solid black;
+        border-radius: 10px;
+        text-align: center;
+        font-size: 18px;
+        outline: none; }
+      main#coding .game #btn {
+        margin-top: 10px;
+        border-radius: 10px;
+        border: 1px solid black;
+        font-size: 24px; }
+    main#coding section {
+      width: fit-content;
+      padding: 0;
+      margin: 0; }
+    main#coding .code {
+      background-color: #000;
+      color: #eece1a;
+      border: 2px #eece1a solid;
+      border-radius: 10px;
+      line-height: 1;
+      width: 320px; }
+      main#coding .code legend {
+        font-size: 1.5rem; }
+      main#coding .code .review {
+        color: #73a9ce;
+        text-align: left; } }
 
 @media screen and (max-width: 500px) {
-  main#home h1 {
-    font-size: 2rem;
-    margin-top: 10vh; } }
+  main {
+    align-items: center;
+    text-align: center; }
+    main .lg-heading {
+      line-height: 1;
+      margin-bottom: 1rem; }
+  ul.menu-nav,
+  div.menu-branding {
+    float: none;
+    width: 100%;
+    min-height: 0; }
+  .menu-nav {
+    height: 40vh;
+    line-height: 0.2; }
+    .menu-nav .nav-link {
+      font-size: 22px; }
+  .menu-branding {
+    height: 60vh; } }
 
 * {
   box-sizing: border-box; }
