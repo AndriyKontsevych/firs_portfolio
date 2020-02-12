@@ -120,13 +120,13 @@
     font-size: 2.5rem;
     margin-top: 3vh; }
   main#coding {
-    width: 320px;
+    width: 360px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; }
     main#coding .game {
-      width: 320px;
+      width: 360px;
       height: 280px;
       background: url(../img/background2.jpg);
       background-size: cover;
@@ -158,21 +158,20 @@
         border-radius: 10px;
         border: 1px solid black;
         font-size: 24px; }
-    main#coding section {
-      width: fit-content;
-      padding: 0;
-      margin: 0; }
     main#coding .code {
+      width: 320px;
       background-color: #000;
       color: #eece1a;
       border: 2px #eece1a solid;
       border-radius: 10px;
-      line-height: 1;
-      width: 320px; }
+      line-height: 1; }
       main#coding .code legend {
         font-size: 1.5rem; }
       main#coding .code .review {
+        width: 320px;
+        padding: 0;
         color: #73a9ce;
+        font-size: 11px;
         text-align: left; } }
 
 @media screen and (max-width: 500px) {
