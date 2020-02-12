@@ -154,6 +154,7 @@
         font-size: 18px;
         outline: none; }
       main#coding .game #btn {
+        background: #fff;
         margin-top: 10px;
         border-radius: 10px;
         border: 1px solid black;
